@@ -79,7 +79,7 @@
 
     - name: All working so destroy the temporary instance
       ec2:
-        key_name: microservice-course-keypair
+        key_name: my-key
         group: jenkins_server_security_groups
         instance_type: notneeded
         image: notneeded
