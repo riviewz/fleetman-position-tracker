@@ -74,7 +74,8 @@
 
 
 - hosts: localhost
-
+  vars:
+    ansible_host_key_checking: false
   tasks:
 
     - name: All working so destroy the temporary instance
