@@ -37,7 +37,7 @@
 
     - name: Start up an EC2 Temporary Instance
       ec2:
-        key_name: microservice-course-keypair
+        key_name: my-key
         group: jenkins_server_security_groups
         instance_type: "{{ instance_type }}"
         image: "{{ base_image_name }}"
