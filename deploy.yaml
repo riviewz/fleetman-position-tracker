@@ -86,7 +86,6 @@
         host: "{{ item.public_ip }}"
         port: 22
         state: started
-        extra_args: StrictHostKeyChecking=no
       with_items: "{{ ec2.tagged_instances }}"
 -
   hosts: "new_ec2_instances, tag_Name_Jenkins_Server"
