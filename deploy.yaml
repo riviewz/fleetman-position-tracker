@@ -78,11 +78,6 @@
       name: "Gather the new ip addresses"
       with_items: "{{ ec2.tagged_instances }}"
 
-    - known_hosts:
-         name: "{{ item.public_ip }}"
-         key: "{{ item.public_ip }}"
-      with_items: "{{ ec2.tagged_instances }}"
-
     -
       name: "Wait for the SSH port to respond"
       wait_for:
