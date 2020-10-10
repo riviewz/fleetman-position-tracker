@@ -7,6 +7,9 @@
     instance_type: t2.micro
     number_of_instances_to_create: 1
     region: ap-south-1
+    host_key_checking: False
+    ssh_host_key_checking: False
+    paramiko_host_key_checking: False
 
   tasks:
 
