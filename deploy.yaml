@@ -69,6 +69,7 @@
         region: "{{ region }}"
         vpc_subnet_id: subnet-f76a639f
         wait: true
+        validate_certs: false
       name: "Create a new EC2 instance"
       register: ec2
     -
