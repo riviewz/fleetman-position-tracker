@@ -1,6 +1,6 @@
 node {
    stage('Prepare') {
-      git 'https://github.com/riviewz/fleetman-webapp'
+      git 'https://github.com/riviewz/fleetman-position-tracker'
    }
    stage('Build') {
       sh 'mvn package'
